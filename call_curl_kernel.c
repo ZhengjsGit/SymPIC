@@ -989,7 +989,7 @@ int  MPI_kgm_eqn_core (Field3D_MPI *  pthis ,Field3D_MPI *  inEB ,double  DT ,do
 	long  cur_rank = 	( inEB )->cur_rank ;
 	long  num_mpi_process = 	( inEB )->num_mpi_process ;
 	long *  sync_layer_len = 	( inEB )->sync_layer_len ;
-	PS_MPI_Request * *  rqst = 	( inEB )->rqst ;
+	PS_MPI_Request * *  rqst = 	( inEB )->rqst ;//add some comments
 	One_Particle_Collection *  particles = 	( inEB )->particles ;
 	int  num_spec = 	( inEB )->num_spec ;
 	double  damp_vars = 	( inEB )->damp_vars ;
